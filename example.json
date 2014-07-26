@@ -1,0 +1,59 @@
+{
+  "items": [
+    {
+      "item_id": "fdsf-321-gfg-1321",
+      "item_type": "GP",
+      "item_type_id": 1,
+      "serial_number": "GP9876543210",
+      "goods_type_name": "COAL",
+      "manifest_name": "BJ(CD1234567890)",
+      "quantity": 5000,
+      "price": 399,
+      "entrust_rate": 0.8,
+      "payment_rate": 0.05,
+      "unit_two": [
+        {
+          "price": "(元)",
+          "quantity": "(吨)",
+          "price_quantity": "(元/吨)"
+        },
+        {
+          "price": "(元)",
+          "quantity": "(吨)",
+          "price_quantity": "(元/吨)"
+        }
+      ]
+    },
+    {
+      "item_id": "fdsf-321-gfg-1321",
+      "item_type": "GP",
+      "item_type_id": 1,
+      "serial_number": "GP9876543210",
+      "goods_type_name": "COAL",
+      "manifest_name": "BJ(CD1234567890)",
+      "quantity": 5000,
+      "price": 399,
+      "entrust_rate": 0.8,
+      "payment_rate": 0.05,
+      "unit_two": [
+        {
+          "price": "(元)",
+          "quantity": "(吨)",
+          "price_quantity": "(元/吨)"
+        },
+        {
+          "price": "(元)",
+          "quantity": "(吨)",
+          "price_quantity": "(元/吨)"
+        }
+      ]
+    }
+  ],
+  "unit": {
+    "price": "(元)",
+    "quantity": "(吨)",
+    "price_quantity": "(元/吨)"
+  },
+  "basic": "a",
+  "normal": 1
+}
