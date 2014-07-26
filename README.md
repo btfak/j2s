@@ -1,4 +1,4 @@
-j2s
+j2s [![Build Status](https://drone.io/github.com/lubia/j2s/status.png)](https://drone.io/github.com/lubia/j2s/latest)
 ======
 
 >j2s is a cmd tool generate golang struct from JSON
