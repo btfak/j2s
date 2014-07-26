@@ -14,9 +14,9 @@ import (
 )
 
 var (
-	name   = flag.String("name", "Foo", "the name of the struct")
-	pkg    = flag.String("pkg", "main", "the name of the package for the generated code")
-	subMap = make(map[string]string)
+	name     = flag.String("name", "Foo", "the name of the struct")
+	pkg      = flag.String("pkg", "main", "the name of the package for the generated code")
+	subSlice = make([]string, 0)
 )
 
 // Given a JSON string representation of an object and a name structName,
@@ -67,15 +67,15 @@ func generateTypes(obj map[string]interface{}, depth int) string {
 		valueType := typeForValue(value)
 		fieldName := fmtFieldName(key)
 		if valueType != "float64" && valueType != "string" {
+			//fmt.Println(fieldName, valueType)
 			var temp string
-			if strings.Contains(valueType, "[]") {
+			if strings.Contains(valueType, "[]struct") {
 				temp = "[]" + fieldName
-			} else {
-				temp = fieldName
+				newValueType := strings.Replace(valueType, "[]", "", 1)
+				//subMap[fieldName] = "type " + fieldName + " " + newValueType
+				subSlice = append(subSlice, "type "+fieldName+" "+newValueType)
+				valueType = temp
 			}
-			newValueType := strings.Replace(valueType, "[]", "", 1)
-			subMap[fieldName] = "type " + fieldName + " " + newValueType
-			valueType = temp
 		}
 		/*//If a nested value, recurse
 		switch value := value.(type) {
@@ -169,7 +169,7 @@ func main() {
 	} else {
 		fmt.Print(string(output))
 		fmt.Println("")
-		for _, v := range subMap {
+		for _, v := range subSlice {
 			//fmt.Println(v)
 			source, err := format.Source([]byte(v))
 			if err != nil {

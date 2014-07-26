@@ -1,59 +1,74 @@
 {
-  "items": [
-    {
-      "item_id": "fdsf-321-gfg-1321",
-      "item_type": "GP",
-      "item_type_id": 1,
-      "serial_number": "GP9876543210",
-      "goods_type_name": "COAL",
-      "manifest_name": "BJ(CD1234567890)",
-      "quantity": 5000,
-      "price": 399,
-      "entrust_rate": 0.8,
-      "payment_rate": 0.05,
-      "unit_two": [
-        {
-          "price": "(元)",
-          "quantity": "(吨)",
-          "price_quantity": "(元/吨)"
-        },
-        {
-          "price": "(元)",
-          "quantity": "(吨)",
-          "price_quantity": "(元/吨)"
-        }
-      ]
-    },
-    {
-      "item_id": "fdsf-321-gfg-1321",
-      "item_type": "GP",
-      "item_type_id": 1,
-      "serial_number": "GP9876543210",
-      "goods_type_name": "COAL",
-      "manifest_name": "BJ(CD1234567890)",
-      "quantity": 5000,
-      "price": 399,
-      "entrust_rate": 0.8,
-      "payment_rate": 0.05,
-      "unit_two": [
-        {
-          "price": "(元)",
-          "quantity": "(吨)",
-          "price_quantity": "(元/吨)"
-        },
-        {
-          "price": "(元)",
-          "quantity": "(吨)",
-          "price_quantity": "(元/吨)"
-        }
-      ]
-    }
-  ],
-  "unit": {
-    "price": "(元)",
-    "quantity": "(吨)",
-    "price_quantity": "(元/吨)"
+  "entrust": {
+    "detail": [
+      {
+        "serial_number": "a",
+        "goods_type_name": "a",
+        "type": "a",
+        "quantity": 1,
+        "amount": 1,
+        "fee": 1,
+        "deal_price": 1,
+        "entrust_price": 1,
+        "compensate": 1
+      }
+    ],
+    "total_quantity": 1,
+    "total_amount": 1,
+    "total_fee": 1,
+    "total_compensate": 1
   },
-  "basic": "a",
-  "normal": 1
+  "consign": {
+    "detail": [
+      {
+        "serial_number": "a",
+        "goods_type_name": "a",
+        "type": "a",
+        "quantity": 1,
+        "amount": 1,
+        "fee": 1,
+        "manage_fee": 1,
+        "deal_price": 1,
+        "consign_price": 1,
+        "compensate": 1
+      }
+    ],
+    "total_quantity": 1,
+    "total_amount": 1,
+    "total_fee": 1,
+    "total_manage_fee": 1,
+    "total_compensate": 1
+  },
+  "finish_entrust": {
+    "detail": [
+      {
+        "serial_number": "a",
+        "goods_type_name": "a",
+        "type": "a",
+        "trade_date": "a",
+        "quantity": 1,
+        "amount": 1
+      }
+    ],
+    "total_quantity": 1,
+    "total_amount": 1
+  },
+  "finish_consign": {
+    "detail": [
+      {
+        "serial_number": "a",
+        "goods_type_name": "a",
+        "trade_date": "a",
+        "quantity": 1,
+        "trasfer_amount": 1
+      }
+    ],
+    "total_quantity": 1,
+    "total_trasfer_amount": 1
+  },
+  "unit": {
+    "price": "a",
+    "quantity": "a",
+    "price_quantity": "a"
+  }
 }
